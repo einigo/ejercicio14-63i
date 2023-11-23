@@ -1,7 +1,19 @@
 body {
   background-color: #757575;
 }
+
+#root {
+  display: flex !important;
+  flex-direction: column;
+  min-height: 100vh;
+}
+ 
 main {
   margin-top: 56px;
   margin-bottom: 25px;
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
 }
