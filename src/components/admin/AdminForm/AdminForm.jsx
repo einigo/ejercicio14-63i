@@ -18,7 +18,6 @@ const {setBlogs} = props;
   } = useForm();
 
   const handleSubmit = (data) => {
-    console.log(data);
 
     const newBlog = { ... data, id: generateId()};
     setBlogs((prev) => [ ... prev, newBlog]);
